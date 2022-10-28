@@ -1,0 +1,14 @@
+version: v1
+
+deps:
+  - buf.build/googleapis/googleapis:332ecf599f8e747d8d1213b77ae7db26eff12814
+
+lint:
+  use:
+    - DEFAULT
+  except:
+    - PACKAGE_DIRECTORY_MATCH
+
+breaking:
+  use:
+    - FILE

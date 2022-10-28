@@ -1,0 +1,21 @@
+syntax = "proto3";
+package junedayday.grpc_gateway_buf_example.echo_service.v1;
+
+option go_package = "github.com/junedayday/grpc_gateway_buf_example/idl/proto";
+
+import "google/api/annotations.proto";
+
+message EchoRequest {
+}
+
+message EchoResponse {
+}
+
+// Flow 交付流程
+service EchoService {
+  rpc Echo(EchoRequest) returns (EchoResponse) {
+    option (google.api.http) = {
+      get : "/v1/echo" // HTTP接口请求URI
+    };
+  };
+}
