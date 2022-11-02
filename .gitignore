@@ -17,3 +17,4 @@
 grpc-gateway-buf-example
 buf.lock
 go.sum
+.idea/

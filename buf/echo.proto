@@ -11,11 +11,11 @@ message EchoRequest {
 message EchoResponse {
 }
 
-// Flow 交付流程
+// Echo 服务
 service EchoService {
   rpc Echo(EchoRequest) returns (EchoResponse) {
     option (google.api.http) = {
-      get : "/v1/echo" // HTTP接口请求URI
+      post: "/v1/echo" // HTTP接口请求URI
     };
   };
 }

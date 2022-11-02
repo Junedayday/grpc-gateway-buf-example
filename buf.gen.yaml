@@ -1,21 +1,14 @@
 version: v1
 plugins:
-  # protoc-gen-go
   - name: go
-  # - remote: buf.build/library/plugins/go:v1.27.1-1
     out: idl/proto
     opt:
       - paths=source_relative
-  # protoc-gen-go-grpc
   - name: go-grpc
-  # - remote: buf.build/library/plugins/go-grpc:v1.1.0-2
     out: idl/proto
     opt:
       - paths=source_relative
-  # protoc-gen-grpc-gateway
   - name: grpc-gateway
-  # - remote: buf.build/grpc-ecosystem/plugins/grpc-gateway:v2.6.0-1
     out: idl/proto
     opt:
       - paths=source_relative
-  # protoc-gen-validate
